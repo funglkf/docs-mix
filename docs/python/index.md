@@ -3,7 +3,7 @@
 
 ## Python environment
 Suggest to use virtual python which will not making your system python messup 
-```
+```shell title="Shell"
 # Mac OS 
 
 ## if no pyenv installed, run:

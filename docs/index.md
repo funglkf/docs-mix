@@ -1,9 +1,32 @@
 ---
 date: 2018-03-15
 title: Home
+hide:
+  - navigation
 ---
 
 # Mkdocs Cheat Sheet
+
+### Quote block (need extensions)
+
+```
+!!! note annotate "Phasellus posuere in sem ut cursus (1)" 
+
+    Lorem ipsum dolor sit amet, (2) consectetur adipiscing elit. Nulla et
+    euismod nulla. 
+
+1.  :man_raising_hand: I'm an annotation!
+2.  :woman_raising_hand: I'm an annotation as well!
+```
+
+!!! note annotate "Phasellus posuere in sem ut cursus (1)" 
+
+    Lorem ipsum dolor sit amet, (2) consectetur adipiscing elit. Nulla et
+    euismod nulla. 
+
+1.  :man_raising_hand: I'm an annotation!
+2.  :woman_raising_hand: I'm an annotation as well!
+
 
 ### Emphasis
 
