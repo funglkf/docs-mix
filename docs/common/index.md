@@ -1,17 +1,8 @@
 ---
 date: 2020-01-01
-title: Useful command
+title: Common
 ---
 
-## Git 
-
-#### Update flow
-```shell
-git add *
-git commit -m "Message you want to deliver"
-git pull origin master -r
-git push origin master
-```
 
 ## Mkdocs
 ```shell
