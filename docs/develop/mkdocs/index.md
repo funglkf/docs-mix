@@ -1,12 +1,12 @@
 ---
 date: 2020-01-01
-title: Common
+title: Develop
 ---
 
 
 ## Mkdocs
 ```shell
-## Build Site 
+## New mkdocs project
 mkdocs new /path/to/build
 
 ## Build Site when completed

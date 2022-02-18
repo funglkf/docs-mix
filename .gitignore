@@ -1,2 +1,10 @@
+# Dependencies
 /env
 /site
+
+# Own docs
+/docs/cmhk
+/docs/optimization
+
+# macOS internals
+.DS_Store

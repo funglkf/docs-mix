@@ -63,3 +63,8 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+
+
+plugins:
+  - minify:
+      minify_html: true
