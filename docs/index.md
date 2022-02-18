@@ -5,6 +5,7 @@ hide:
   - navigation
   - toc
 ---
+# Home
 
 ## Quick Start on localhost
 

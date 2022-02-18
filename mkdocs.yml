@@ -65,6 +65,13 @@ markdown_extensions:
   - pymdownx.snippets
 
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/funglkf
+
+
 plugins:
+  - search
   - minify:
       minify_html: true

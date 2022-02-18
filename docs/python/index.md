@@ -1,5 +1,7 @@
-
-# Setup the docs
+---
+date: 2020-01-01
+title: Python
+---
 
 ## Python environment
 Suggest to use virtual python which will not making your system python messup 
