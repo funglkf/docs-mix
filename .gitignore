@@ -8,3 +8,5 @@
 
 # macOS internals
 .DS_Store
+
+serve.sh

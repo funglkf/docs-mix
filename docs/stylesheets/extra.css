@@ -1,0 +1,11 @@
+h2 {
+  margin: 1rem 0rem 2rem 0rem !important;
+  border-bottom: solid 1px var(--md-accent-fg-color);
+  padding: 0rem 0rem 0rem 0.5rem !important;
+}
+
+h3 {
+  margin: 1rem 0rem 1rem 0rem !important;
+  padding: 0rem 0rem 0rem 0.5rem !important;
+  border-bottom: double var(--md-accent-fg-color);
+}

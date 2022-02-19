@@ -1,8 +1,16 @@
 ---
 title: Mac OS
+date: 2022-01-01
+hide:
+    - tags
+tags:
+    - 'mac'
 ---
 
-## Document title
-...
 
+# MAC OS notes
+
+## Document title
+
+P
 

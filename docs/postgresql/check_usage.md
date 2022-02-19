@@ -1,3 +1,13 @@
+---
+title: Database usage
+date: 2022-01-01
+tags:
+    - 'postgresql'
+    - 'sql'
+---
+
+# Postgres Database usage
+
 ## Check usage for schema
 
 ```sql

@@ -1,7 +1,11 @@
 ---
-date: 2020-01-01
 title: Python
+date: 2022-01-01
+tags:
+    - 'python'
+    - 'setup'
 ---
+
 
 ## Python environment
 Suggest to use virtual python which will not making your system python messup 
@@ -26,5 +30,12 @@ deactivate
 ```
 
 ## Install requirement python package
+
 Install requirement package inside virtual environment
 `pip install -r requirements.txt`
+
+
+## upgrade package by pip & requirement file
+
+`pip install --upgrade --force-reinstall -r requirements.txt`
+

@@ -1,12 +1,15 @@
 ---
 title: Auto deploy after git push
-description: Auto deploy after git push
-created: 2022-02-01
+date: 2022-01-01
+hide:
+    - tags
 tags:
-  - 'Git'
+    - git
 ---
 
-## How to
+# Auto deploy after git push using post-receive file
+
+## Configuration
 
 To enable the ```post-receive``` hook script, put a file in the hooks subdirectory of your .git directory that is same named (without any extension) and make it executable:
 
@@ -15,21 +18,25 @@ touch GIT_PATH.git/hooks/post-receive
 chmod u+x GIT_PATH.git/hooks/post-receive
 ```
 
-And here is the sample of ```post-receive``` file  
-```shell
-#!/bin/sh
-cd /home/radio/scripts/django_opt
-sudo -u radio git pull
-sudo systemctl restart gunicorn
-```
+And here is the sample of ```post-receive``` file deploying a django project
+!!! Sample
+    ```shell title="GIT_PATH.git/hooks/post-receive"
+    #!/bin/sh
+    cd /home/user/scripts/django
+    sudo -u uesr git pull
+    sudo systemctl restart gunicorn
+    ```
 
-When there is sudo command, you need to adding ```sudoers``` file to auth the command without entering password by:
+When there is sudo command, you need to adding ```sudoers``` file to auth run command without entering password by:
 
 `sudo visudo -f /etc/sudoers.d/whatevername`
-```shell
-git ALL=(radio) NOPASSWD: /usr/bin/git
-git ALL=(ALL) NOPASSWD: /bin/systemctl restart gunicorn
-```
+
+!!! Sample
+    ```shell title="/etc/sudoers.d/whatevername"
+    git ALL=(radio) NOPASSWD: /usr/bin/git
+    git ALL=(ALL) NOPASSWD: /bin/systemctl restart gunicorn
+    ```
+
 
 After all, the commands inside `post-receive`  will run when you doing `git push`
 
