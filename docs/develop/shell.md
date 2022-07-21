@@ -27,3 +27,9 @@ while read p; do
   
 done <file.txt
 ```
+
+## Using ssh to copy server folder to local
+
+```shell
+scp -r userid@host.address:/path/of/folder /target/local/folder
+```
