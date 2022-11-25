@@ -39,3 +39,26 @@ Install requirement package inside virtual environment
 
 `pip install --upgrade --force-reinstall -r requirements.txt`
 
+
+## iterate over files and print line with keyword
+
+```
+# import required module
+import os
+ 
+# assign directory
+directory = '.'
+ 
+# assign keyword
+keyword = "args['log_hash']:"
+
+# iterate over files and print line with keyword
+for filename in os.scandir(directory):
+    if filename.is_file():
+        # print(filename.path)
+        with open(filename.path, 'r') as f:
+            data = f.readlines()
+            for line in data:
+                if keyword in line:
+                    print(line)
+```
