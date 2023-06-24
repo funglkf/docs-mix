@@ -13,31 +13,20 @@ tags:
 
 ## Quick Start on localhost
 
-> Linux
-```
-source env/bin/activate
-mkdocs serve
-```
-
-> Windows
-```
-source env/Scripts/activate
-mkdocs serve
-```
-
 !!! Note
 
-    === "Linux"
+    === "Global Python"
 
         ```
-        source env/bin/activate
+        pip install -r requirements.txt
         mkdocs serve
         ```
 
-    === "Windows"
+    === "Virtual environment"
 
         ```
         source env/Scripts/activate
+        pip install -r requirements.txt
         mkdocs serve
         ```
 
